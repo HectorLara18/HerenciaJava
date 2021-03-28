@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.Date;
+
 public class Empleado extends Persona{
     //Atributos
     private static int contadorEmpleado;
@@ -22,6 +24,8 @@ public class Empleado extends Persona{
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
+
+
 
     //**
     // Si los atributos en la clase padre estan encapsulados como privados no podran ser heredados a la clase hija
