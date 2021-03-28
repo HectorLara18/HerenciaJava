@@ -23,16 +23,16 @@ public class Empleado extends Persona{
         this.sueldo = sueldo;
     }
 
+    //**
+    // Si los atributos en la clase padre estan encapsulados como privados no podran ser heredados a la clase hija
+    //como mejor practica deben de estar encapsulados como protected
+    // */
 
 
     @Override
     public String toString() {
-        return "Empleado{" +
-                ", nombre='" + nombre + '\'' +
-                ", genero=" + genero +
-                ", edad=" + edad +
-                ", direccion='" + direccion + '\'' +
-                "idEmpleado=" + idEmpleado +
+        return  super.toString() +
+                " idEmpleado=" + idEmpleado +
                 ", sueldo=" + sueldo +
                 '}';
     }
